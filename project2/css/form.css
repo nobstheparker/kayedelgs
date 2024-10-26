@@ -1,0 +1,121 @@
+body {
+    font-family: "Kalnia", serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/img1.png'); 
+    background-size: cover;
+    background-position: center;
+    font-weight: 508;
+    font-style: normal;
+   
+}
+
+h5{
+    font-family: "Kalnia", serif;
+    color: #C88C1C;
+}
+
+.makeitTop{
+    margin-top: 20px;
+}
+.top-bar {
+    background-color: #2A1C16;
+    height: 50px;
+}
+
+.topTitle {
+    color: #C88C1C;
+    margin: 0px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "Kalnia", serif;
+}
+
+
+.white-line {
+        height: 7px;
+        background-color: #ffffff; 
+}
+
+.container-custom {
+    background-color: #301F16; 
+    opacity: 95%;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    max-width: 100%;
+    margin: 0 auto 15px auto;
+}
+
+.form-title {
+    margin-top: 2%;
+    text-align: center;
+    background-color: #301F16;
+    margin: 0;
+}
+
+.form-title h2 {
+    margin-top: 1%;
+    font-size: 20px;
+    color: #C88C1C;
+    position: relative;
+    font-family: "Kalnia", serif;
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.terms{
+    background-color: #D2992F;
+    padding: 7px;
+}
+
+.btn-submit {
+    background-color: #D2992F;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 5%;
+}
+
+.btn-submit:hover {
+    background-color: #ee9714;
+}
+
+
+
+@media (max-width: 992px) {
+    .container-custom {
+        max-width: 100%; 
+    }
+
+    .btn-submit {
+        background-color: #D2992F;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+    
+}
+
+@media (max-width: 310px) {
+    .container-custom {
+        max-width: 90%; 
+    }
+
+    .btn-submit {
+        background-color: #D2992F;
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+
+}

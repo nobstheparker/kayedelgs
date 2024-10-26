@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; 
+}
+
+
+.header {
+    font-family: "Katibeh","serif";
+    background-color: #2A1C16; 
+    color: #C88C1C; 
+    text-align: center;
+    padding: 6px 0;
+    font-size: 3.5rem;
+    border-bottom: 4px solid #ffffff; 
+    font-weight: 508;
+    font-style: normal;
+    font-variation-settings: "100";
+}
+
+
+.banner {
+    position: relative;
+    height: calc(100vh - 150px); /* Full viewport height minus header and footer */
+    width: 100%;
+}
+
+.banner-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2A1C16;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 78%;
+    
+    font-family: "Kalnia";
+}
+
+.main-text {
+    font-size: 5rem;
+    font-weight: normal;
+    text-shadow: -2px 2px 0 #C88C1C , 2px 2px 0 #C88C1C;
+}
+
+.sub-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-family: "Kaisei Tokumin";
+
+
+}
+
+
+.highlight {
+    color:#C88C1C; 
+    text-shadow: -1px 1px 0 #C88C1C , 1px 1px 0 #C88C1C;
+    
+}
+
+
+.footer {
+    background-color: #2A1C16; 
+    color: #2A1C16; 
+    text-align: center;
+    padding: 15px 0;
+    border-top: 4px solid #ffffff; 
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { 
+
+    .header{
+        font-size: 3.3rem;
+    }
+    .main-text {
+        font-size: 3.0rem; 
+    }
+
+    .sub-text {
+        font-size: 1rem; 
+    }
+
+    .overlay {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+        font-size: 3.3rem;
+    }
+    .main-text {
+        font-size: 2.5rem; 
+    }
+
+    .sub-text {
+        font-size: 0.9rem; 
+    }
+
+    .overlay {
+        padding: 15px; 
+    }
+}
