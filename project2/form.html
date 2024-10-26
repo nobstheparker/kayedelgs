@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Kalnia:wght@508&family=Katibeh&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <title>GF Charity Donation Form</title>
+</head>
+<body>
+    <div class="top-bar text-center">
+        <div class="topTitle">Giving Forward</div>
+    </div>
+
+    <div class="white-line"></div>
+
+    <div class="container makeitTop">
+        <div class="form-title">
+            <div class="white-line"></div>
+            <h2>GF Charity Donation Form</h2>
+            <div class="white-line"></div>
+        </div>
+
+        <div class="container container-custom">
+            
+            <form>
+                <h5>Donor’s Information:</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="first-name"></label>
+                        <input type="text" placeholder="First Name" autocomplete="first-name" class="form-control" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="last-name"></label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Last Name" name="last-name" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email" autocomplete="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone" autocomplete="phone" name="phone" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="address" placeholder="Address" autocomplete="address" name="address" required>
+                </div>
+
+                <h5>Donation Details:</h5>
+                <div class="mb-3">
+                    <label for="amount" class="form-label"></label>
+                    <input type="number" class="form-control" id="amount" placeholder="Donation Amount" name="amount" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="one-time">Donation Frequency</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="frequency" id="one-time" value="one-time" required>
+                        <label class="form-check-label" for="one-time">One Time</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="frequency" id="recurring" value="recurring" required>
+                        <label class="form-check-label" for="recurring">Recurring</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="recurring-type" class="form-label">If Recurring (Weekly, Monthly, Annually)</label>
+                    <select class="form-select" id="recurring-type" name="recurring-type">
+                        <option selected disabled>-- Select Frequency --</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="general-fund">Donation Purpose/Designation</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="designation" id="general-fund" value="general-fund" required>
+                        <label class="form-check-label" for="general-fund">General Fund</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="designation" id="education-fund" value="education-fund" required>
+                        <label class="form-check-label" for="education-fund">Education Fund</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="designation" id="healthcare-fund" value="healthcare-fund" required>
+                        <label class="form-check-label" for="healthcare-fund">Healthcare Fund</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="designation" id="disaster-relief" value="disaster-relief" required>
+                        <label class="form-check-label" for="disaster-relief">Disaster Relief Fund</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="designation" id="other" value="other" required>
+                        <label class="form-check-label" for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="other-details" class="form-label">IF OTHER "Please specify if you'd like your donation allocated to a specific group or project."</label>
+                    <input type="text" class="form-control" id="other-details" name="other-details">
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" id="paymentMethod">
+                        <option selected disabled>Payment Info</option>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="debitCard">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="yes">Make a Donation in Honor/Memory of Someone?</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="frequency" id="yes" value="one-time" required>
+                        <label class="form-check-label" for="one-time">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="frequency" id="no" value="recurring" required>
+                        <label class="form-check-label" for="recurring">No</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" id="dedicationType">
+                        <option selected disabled>Dedication Type</option>
+                        <option value="creditCard">In Honor</option>
+                        <option value="debitCard">In Memory</option>
+                        
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="recipientName" class="form-label"></label>
+                    <input type="text" class="form-control" id="recipientName" placeholder="Recipient's Name">
+                </div>
+                <div class="mb-3">
+                    <label for="recipientEmail" class="form-label"></label>
+                    <input type="email" class="form-control" id="recipientEmail" placeholder="Recipient's Email/Address">
+                </div>
+    
+                <div class="mb-3">
+                    <label class="form-label" for="anonymousYes">Would you like to remain anonymous?</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="anonymous" id="anonymousYes" value="yes">
+                        <label class="form-check-label" for="anonymousYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="anonymous" id="anonymousNo" value="no">
+                        <label class="form-check-label" for="anonymousNo">No</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label family" for="receiptYes">Would you like to receive a tax receipt?</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="receipt" id="receiptYes" >
+                        <label class="form-check-label" for="receiptYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="receipt" id="receiptNo" value="no">
+                        <label class="form-check-label" for="receiptNo">No</label>
+                    </div>
+                </div>
+    
+                 <h5>Terms and Conditions</h5>
+                <div class="terms">
+                    <p>By submitting this donation, I confirm that the information provided is accurate and complete. I understand that my donation is voluntary and non-refundable. If I select to remain anonymous, I acknowledge that I will not be listed in connection with the donation for tax receipts or public acknowledgments. I consent to be contacted using my details for updates and reports related to this donation, as outlined in the organization's privacy policy.</p>
+                </div>
+    
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck">
+                    <label class="form-check-label" for="termsCheck">I agree to the Terms and Conditions and Privacy Policy.</label>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit" class="btn-submit w-50">Complete Donation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="white-line"></div>
+    <div class="top-bar"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
