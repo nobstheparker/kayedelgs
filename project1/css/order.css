@@ -1,0 +1,108 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #b51f1f;
+    height: 10vh;
+    border-bottom: 15px solid #e6aa00;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.0rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.restaurant-selection {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-style: normal;
+    margin-top: 20px;
+    padding-left: 40px; 
+}
+
+.restaurant-selection h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    text-align: left; 
+    margin-bottom: 20px;
+   
+}
+
+
+.restaurant-box {
+    position: relative;
+    width: 225px;
+    height: 225px; 
+    overflow: hidden; 
+    border-radius: 20px; 
+    background-color: #e0e0e0;
+    border: 3px solid #ccc;
+    margin: 0 65px; 
+    
+    transition:1s;
+
+}
+
+.restaurant-box:hover {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transform: scale(1.1);
+    z-index:2;
+}
+
+.restaurant-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #b51f1f;
+    border-top: 10px solid #e6aa00;
+    height: 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .restaurant-box {
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+        margin-right: 40%;
+    }
+
+    .restaurant-selection h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+        display: flex;
+        margin-left: 10%;
+    }
+
+    .restaurant-selection h2 {
+        font-size: 1.3rem;
+    }
+}

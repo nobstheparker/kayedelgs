@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+   background: url(../image/cover.png);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   overflow: hidden;
+
+  }
+
+  body::after{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg,#000,transparent);
+    top: 0;
+    z-index: -1;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Lalezar", system-ui;
+    font-style: normal;
+    color: #000;
+    text-align: center;
+    padding: 10x 10px;
+    background-color: #ffcc00;
+    border-bottom: 15px solid #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  /* Content Styling */
+
+  .el{
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  
+  .hungry {
+    font-size: 110px;
+    font-weight: bold;
+    color: #fafafa;
+    font-family: "Jolly Lodger", system-ui;
+  }
+  
+  .text-highlight {
+    color: #ffcc00;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Inika", serif;
+  }
+  
+  .description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: "Inika", serif;
+  }
+  
+  .proceed-btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    font-family: "Inika", serif;
+  }
+  
+  .description{
+    color: #fafafa;
+  }
+
+  @media all and (max-width:  1000px) {
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: "Lalezar", system-ui;
+      font-style: normal;
+      color: #000;
+      text-align: center;
+      padding: 10x 10px;
+      background-color: #ffcc00 ;
+      border-bottom: 15px solid #fafafa;
+      width: 100%;
+    }
+
+    .hungry {
+      font-size: 120px;
+      font-weight: bold;
+      color: #fafafa;
+      font-family: "Jolly Lodger", system-ui;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+     background: url(../image/cover.png);
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     overflow: none;
+    }
+
+    .el{
+      margin-left: 0px;
+      margin-top: 130px;
+    }
+
+    .el{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      align-self: center;
+      text-align: center;
+      padding: 10px 10px;
+    }
+
+    .description{
+      color: #fafafa;
+      font-size: 15px;
+    }
+  }
